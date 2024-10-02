@@ -1,0 +1,30 @@
+{% extends "account/base.html" %}
+
+{% load i18n account django_bootstrap5 %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+{% block title %}{% trans "Sign In" %}{% endblock %}
+
+{% block accounts_content %}
+  <div class="header_custom">
+    <div class="branding_custom">
+      <h1 class="site-name_custom"><a href="{% url 'account_login' %}">{% trans "Sign In" %}</a></h1>
+    </div>
+  </div>
+  <div class="main_form">
+    {% if SOCIALACCOUNT_ENABLED %}
+      {% include "socialaccount/snippets/login.html" with page_layout="entrance" %}
+    {% endif %}
+    <p>{% blocktrans %}If you have not created an account yet, then please
+      <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+    <form class="login" method="POST" action="{% url 'account_login' %}">
+      {% csrf_token %}
+      {% bootstrap_form form %}
+      {% if redirect_field_value %}
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+      {% endif %}
+      {% trans "Sign In" as button_text %}
+      {% bootstrap_button button_text button_type="submit" extra_classes="secondaryAction w-100" %}
+    </form>
+  </div>
+{% endblock %}

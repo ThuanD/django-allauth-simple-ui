@@ -1,0 +1,29 @@
+{% extends "account/base.html" %}
+{% load i18n static %}
+
+{% block head_title %}{% trans "Account Locked" %}{% endblock %}
+{% block title %}{% trans "Account Locked" %}{% endblock %}
+
+{% block accounts_content %}
+  <div class="header_custom">
+    <div class="branding_custom">
+      <h1 class="site-name_custom"><a>{% trans "Account blocked" %}</a></h1>
+    </div>
+  </div>
+  <div class="main_form">
+    <p>
+      {% blocktrans %}
+        You have entered the wrong password more than {{ failure_limit }} times.
+        We will temporarily lock <strong>{{ username }}</strong>'s account within {{ cooloff_timedelta }}.
+      {% endblocktrans %}
+    </p>
+    <p>
+      {% translate 'Please try again and make sure you entered the correct password. Or try using the function ' %}
+      <a href="{% url 'account_reset_password' %}">
+        {% translate 'forgot password' %}</a>.
+    </p>
+    <p>
+      {% trans 'If you have any problems, please contact the administrator.' %}
+    </p>
+  </div>
+{% endblock %}

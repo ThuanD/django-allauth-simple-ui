@@ -1,0 +1,18 @@
+{% load i18n %}
+{% load allauth %}
+{% load socialaccount %}
+{% get_providers as socialaccount_providers %}
+{% if socialaccount_providers %}
+  <p>
+    {% trans 'Please sign in with one of your existing third party accounts. Or, ' %}
+    <a href="{{ signup_url }}">{% trans 'sign up' %}</a>
+    {% trans ' an account and sign in below:' %}
+  </p>
+  <div class="socialaccount_ballot">
+    <ul class="socialaccount_providers">
+      {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+    </ul>
+    <div class="login-or">{% trans 'or' %}</div>
+  </div>
+  {% include "socialaccount/snippets/login_extra.html" %}
+{% endif %}

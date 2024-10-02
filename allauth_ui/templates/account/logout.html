@@ -1,0 +1,26 @@
+{% extends "account/base.html" %}
+{% load django_bootstrap5 %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Sign Out" %}{% endblock %}
+{% block title %}{% trans "Sign Out" %}{% endblock %}
+
+{% block accounts_content %}
+  <div class="header_custom">
+    <div class="branding_custom">
+      <h1 class="site-name_custom"><a>{% trans "Sign Out" %}</a></h1>
+    </div>
+  </div>
+  <div class="main_form">
+    <p>{% trans 'Are you sure you want to sign out?' %}</p>
+    <form method="post" action="{% url 'account_logout' %}">
+      {% csrf_token %}
+      {% if redirect_field_value %}
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+      {% endif %}
+      {% trans "Sign Out" as button_text %}
+      {% bootstrap_button button_text button_type="submit" extra_classes="secondaryAction w-100" %}
+    </form>
+  </div>
+{% endblock %}

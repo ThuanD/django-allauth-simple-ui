@@ -1,0 +1,30 @@
+{% extends "base_site.html" %}
+{% load i18n %}
+
+{% block extrahead %}{{ block.super }}
+{% endblock %}
+
+{% block coltype %}colMS{% endblock %}
+
+{% block bodyclass %}{{ block.super }} dashboard{% endblock %}
+
+{% block nav-breadcrumbs %}{% endblock %}
+
+{% block nav-sidebar %}{% endblock %}
+
+{% block content %}
+  <div id="content-main">
+    {% include "admin/app_list.html" with app_list=app_list show_changelinks=True %}
+  </div>
+{% endblock %}
+
+{% block sidebar %}
+  <div id="content-related">
+    <div class="module" id="recent-actions-module">
+      <h2>{% translate 'Recent device' %}</h2>
+      <h3>{% translate 'My device' %}</h3>
+      <p>{% translate 'Public IP:' %} {{ client_ip }}</p>
+      <p>{% translate 'User agent:' %} {{ ua_string }}</p>
+    </div>
+  </div>
+{% endblock %}

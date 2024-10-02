@@ -1,0 +1,20 @@
+{% load form_tags %}
+<fieldset class="module aligned {{ fieldset.classes }}"{% if name %} aria-labelledby="{{ prefix }}-{{ id_prefix}}-{{ name }}-{{ id_suffix }}-heading"{% endif %}>
+  <h2>{{ fieldset.0 }}</h2>
+  {% for field_name in fieldset.1.fields %}
+    {% with field=form|get_field:field_name %}
+      <div class="form-row {% if field.errors %}errors{% endif %} field-{{ field.name }}">
+        <div>
+          {% if field.errors %}{{ field.errors }}{% endif %}
+          <div class="flex-container">
+            <label for="{{ field.id_for_label }}">{{ field.label }}:</label>
+            {{ field }}
+          </div>
+          {% if field.help_text %}
+            <div class="help">{{ field.help_text|safe }}</div>
+          {% endif %}
+        </div>
+      </div>
+    {% endwith %}
+  {% endfor %}
+</fieldset>

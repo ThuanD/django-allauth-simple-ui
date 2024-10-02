@@ -1,0 +1,644 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-03 20:10+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: allauth_ui/forms.py:11
+msgid "Password"
+msgstr "Mật khẩu"
+
+#: allauth_ui/forms.py:13
+#, fuzzy
+#| msgid ""
+#| "Raw passwords are not stored, so there is no way to see the user's "
+#| "password."
+msgid ""
+"Raw passwords are not stored, so there is no way to see the user’s password."
+msgstr ""
+"Mật khẩu gốc không được lưu trữ, vì vậy không có cách nào để xem mật khẩu "
+"của người dùng."
+
+#: allauth_ui/forms.py:18
+msgid "Last login"
+msgstr "Đăng nhập lần cuối"
+
+#: allauth_ui/forms.py:22
+msgid "Date joined"
+msgstr "Ngày tham gia"
+
+#: allauth_ui/settings.py:17 allauth_ui/settings.py:18
+#: allauth_ui/templates/account/base.html:245
+#: allauth_ui/templates/account/snippets/header.html:5
+msgid "NOCOEM"
+msgstr "NOCOEM"
+
+#: allauth_ui/templates/account/account_inactive.html:5
+#: allauth_ui/templates/account/account_inactive.html:10
+msgid "Account Inactive"
+msgstr "Tài khoản không hoạt động"
+
+#: allauth_ui/templates/account/account_inactive.html:14
+msgid "This account is inactive."
+msgstr "Tài khoản này không hoạt động."
+
+#: allauth_ui/templates/account/email.html:6
+#: allauth_ui/templates/account/email.html:7
+#: allauth_ui/templates/account/email.html:12
+msgid "E-mail Addresses"
+msgstr "Địa chỉ email"
+
+#: allauth_ui/templates/account/email.html:17
+msgid "The following e-mail addresses are associated with your account:"
+msgstr "Các địa chỉ email sau đây được liên kết với tài khoản của bạn:"
+
+#: allauth_ui/templates/account/email.html:33
+msgid "Verified"
+msgstr "Đã xác minh"
+
+#: allauth_ui/templates/account/email.html:35
+msgid "Unverified"
+msgstr "Chưa xác minh"
+
+#: allauth_ui/templates/account/email.html:38
+msgid "Primary"
+msgstr "Chính"
+
+#: allauth_ui/templates/account/email.html:43
+msgid "Make Primary"
+msgstr "Đặt làm chính"
+
+#: allauth_ui/templates/account/email.html:45
+#: allauth_ui/templates/account/email_change.html:44
+msgid "Re-send Verification"
+msgstr "Gửi lại xác minh"
+
+#: allauth_ui/templates/account/email.html:47
+msgid "Remove"
+msgstr "Xóa"
+
+#: allauth_ui/templates/account/email.html:54
+msgid "Warning:"
+msgstr "Cảnh báo:"
+
+#: allauth_ui/templates/account/email.html:54
+msgid ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, etc."
+msgstr ""
+"Hiện tại bạn chưa thiết lập địa chỉ email nào. Bạn nên thêm một địa chỉ "
+"email để có thể nhận thông báo, đặt lại mật khẩu, v.v."
+
+#: allauth_ui/templates/account/email.html:60
+msgid "Add new E-mail Address"
+msgstr "Thêm địa chỉ email mới"
+
+#: allauth_ui/templates/account/email.html:65
+msgid "Add E-mail"
+msgstr "Thêm email"
+
+#: allauth_ui/templates/account/email.html:76
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr "Bạn có thực sự muốn xóa địa chỉ email đã chọn không?"
+
+#: allauth_ui/templates/account/email/base_message.txt:1
+#, python-format
+msgid "Hello from %(site_name)s!"
+msgstr "Xin chào từ %(site_name)s!"
+
+#: allauth_ui/templates/account/email/base_message.txt:5
+#, python-format
+msgid ""
+"Thank you for using %(site_name)s!\n"
+"%(site_domain)s"
+msgstr ""
+"Cảm ơn bạn đã sử dụng %(site_name)s!\n"
+"%(site_domain)s"
+
+#: allauth_ui/templates/account/email/email_confirmation_message.txt:5
+#, python-format
+msgid ""
+"You're receiving this e-mail because user %(user_display)s has given your e-"
+"mail address to register an account on %(site_domain)s.\n"
+"\n"
+"To confirm this is correct, go to %(activate_url)s"
+msgstr ""
+"Bạn nhận được email này vì người dùng %(user_display)s đã sử dụng địa chỉ "
+"email của bạn để đăng ký tài khoản trên %(site_domain)s.\n"
+"\n"
+"Để xác nhận điều này là chính xác, hãy truy cập %(activate_url)s"
+
+#: allauth_ui/templates/account/email/email_confirmation_subject.txt:3
+msgid "Please Confirm Your E-mail Address"
+msgstr "Vui lòng xác nhận địa chỉ email của bạn"
+
+#: allauth_ui/templates/account/email/password_reset_key_message.txt:4
+msgid ""
+"You're receiving this e-mail because you or someone else has requested a "
+"password for your user account.\n"
+"It can be safely ignored if you did not request a password reset. Click the "
+"link below to reset your password."
+msgstr ""
+"Bạn nhận được email này vì bạn hoặc ai đó đã yêu cầu đặt lại mật khẩu cho "
+"tài khoản của bạn.\n"
+"Bạn có thể bỏ qua email này nếu bạn không yêu cầu đặt lại mật khẩu. Nhấp vào "
+"liên kết dưới đây để đặt lại mật khẩu của bạn."
+
+#: allauth_ui/templates/account/email/password_reset_key_message.txt:9
+#, python-format
+msgid "In case you forgot, your username is %(username)s."
+msgstr "Trong trường hợp bạn quên, tên người dùng của bạn là %(username)s."
+
+#: allauth_ui/templates/account/email/password_reset_key_subject.txt:3
+msgid "Password Reset E-mail"
+msgstr "Email đặt lại mật khẩu"
+
+#: allauth_ui/templates/account/email_change.html:5
+#: allauth_ui/templates/account/email_change.html:9
+msgid "Email Address"
+msgstr "Địa chỉ email"
+
+#: allauth_ui/templates/account/email_change.html:20
+msgid "Current email"
+msgstr "Email hiện tại"
+
+#: allauth_ui/templates/account/email_change.html:27
+msgid "Changing to"
+msgstr "Đang thay đổi thành"
+
+#: allauth_ui/templates/account/email_change.html:30
+msgid "Your email address is still pending verification."
+msgstr "Địa chỉ email của bạn vẫn đang chờ xác minh."
+
+#: allauth_ui/templates/account/email_change.html:36
+msgid "Change to"
+msgstr "Thay đổi thành"
+
+#: allauth_ui/templates/account/email_change.html:47
+msgid "Cancel Change"
+msgstr "Hủy thay đổi"
+
+#: allauth_ui/templates/account/email_change.html:51
+msgid "Change Email"
+msgstr "Thay đổi email"
+
+#: allauth_ui/templates/account/email_confirm.html:7
+#: allauth_ui/templates/account/email_confirm.html:12
+msgid "Confirm E-mail Address"
+msgstr "Xác nhận địa chỉ email"
+
+#: allauth_ui/templates/account/email_confirm.html:18
+#, python-format
+msgid ""
+"Please confirm that\n"
+"        <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail address for "
+"user %(user_display)s\n"
+"        ."
+msgstr ""
+"Vui lòng xác nhận rằng\n"
+"        <a href=\"mailto:%(email)s\">%(email)s</a> là địa chỉ email của "
+"người dùng %(user_display)s\n"
+"        ."
+
+#: allauth_ui/templates/account/email_confirm.html:24
+msgid "Confirm"
+msgstr "Xác nhận"
+
+#: allauth_ui/templates/account/email_confirm.html:30
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please\n"
+"        <a href=\"%(email_url)s\">issue a new e-mail confirmation request</"
+"a>."
+msgstr ""
+"Liên kết xác nhận email này đã hết hạn hoặc không hợp lệ. Vui lòng\n"
+"        <a href=\"%(email_url)s\">yêu cầu xác nhận email mới</a>."
+
+#: allauth_ui/templates/account/home.html:24
+msgid "Recent device"
+msgstr "Thiết bị gần đây"
+
+#: allauth_ui/templates/account/home.html:25
+msgid "My device"
+msgstr "Thiết bị của tôi"
+
+#: allauth_ui/templates/account/home.html:26
+msgid "Public IP:"
+msgstr "IP công khai:"
+
+#: allauth_ui/templates/account/home.html:27
+msgid "User agent:"
+msgstr "User agent:"
+
+#: allauth_ui/templates/account/locked.html:4
+#: allauth_ui/templates/account/locked.html:5
+msgid "Account Locked"
+msgstr "Tài khoản bị khóa"
+
+#: allauth_ui/templates/account/locked.html:10
+msgid "Account blocked"
+msgstr "Tài khoản bị chặn"
+
+#: allauth_ui/templates/account/locked.html:15
+#, python-format
+msgid ""
+"\n"
+"        You have entered the wrong password more than %(failure_limit)s "
+"times.\n"
+"        We will temporarily lock <strong>%(username)s</strong>'s account "
+"within %(cooloff_timedelta)s.\n"
+"      "
+msgstr ""
+"\n"
+"        Bạn đã nhập sai mật khẩu hơn %(failure_limit)s lần.\n"
+"        Chúng tôi sẽ tạm thời khóa tài khoản của <strong>%(username)s</"
+"strong> trong vòng %(cooloff_timedelta)s.\n"
+"      "
+
+#: allauth_ui/templates/account/locked.html:21
+msgid ""
+"Please try again and make sure you entered the correct password. Or try "
+"using the function "
+msgstr ""
+"Vui lòng thử lại và đảm bảo bạn đã nhập đúng mật khẩu. Hoặc thử sử dụng chức "
+"năng "
+
+#: allauth_ui/templates/account/locked.html:23
+msgid "forgot password"
+msgstr "quên mật khẩu"
+
+#: allauth_ui/templates/account/locked.html:26
+msgid "If you have any problems, please contact the administrator."
+msgstr "Nếu bạn gặp bất kỳ vấn đề nào, vui lòng liên hệ với quản trị viên."
+
+#: allauth_ui/templates/account/login.html:5
+#: allauth_ui/templates/account/login.html:6
+#: allauth_ui/templates/account/login.html:11
+#: allauth_ui/templates/account/login.html:39
+#: allauth_ui/templates/account/snippets/header.html:34
+#: allauth_ui/templates/account/snippets/user_tools.html:29
+#: allauth_ui/templates/base_site.html:44
+msgid "Sign In"
+msgstr "Đăng nhập"
+
+#: allauth_ui/templates/account/login.html:18
+msgid "Please sign in with one of your existing third party accounts. Or, "
+msgstr ""
+"Vui lòng đăng nhập bằng một trong các tài khoản bên thứ ba hiện có của bạn. "
+"Hoặc, "
+
+#: allauth_ui/templates/account/login.html:19
+msgid "sign up"
+msgstr "đăng ký"
+
+#: allauth_ui/templates/account/login.html:20
+msgid " an account and sign in below:"
+msgstr " một tài khoản và đăng nhập dưới đây:"
+
+#: allauth_ui/templates/account/login.html:26
+msgid "or"
+msgstr "hoặc"
+
+#: allauth_ui/templates/account/login.html:30
+#, python-format
+msgid ""
+"If you have not created an account yet, then please\n"
+"        <a href=\"%(signup_url)s\">sign up</a> first."
+msgstr ""
+"Nếu bạn chưa tạo tài khoản, vui lòng\n"
+"        <a href=\"%(signup_url)s\">đăng ký</a> trước."
+
+#: allauth_ui/templates/account/logout.html:6
+#: allauth_ui/templates/account/logout.html:7
+#: allauth_ui/templates/account/logout.html:12
+#: allauth_ui/templates/account/logout.html:22
+#: allauth_ui/templates/account/snippets/header.html:26
+#: allauth_ui/templates/account/snippets/header.html:31
+#: allauth_ui/templates/account/snippets/user_tools.html:27
+#: allauth_ui/templates/base_site.html:42
+msgid "Sign Out"
+msgstr "Đăng xuất"
+
+#: allauth_ui/templates/account/logout.html:16
+msgid "Are you sure you want to sign out?"
+msgstr "Bạn có chắc chắn muốn đăng xuất không?"
+
+#: allauth_ui/templates/account/messages/cannot_delete_primary_email.txt:2
+#, python-format
+msgid "You cannot remove your primary e-mail address (%(email)s)."
+msgstr "Bạn không thể xóa địa chỉ email chính của mình (%(email)s)."
+
+#: allauth_ui/templates/account/messages/email_confirmation_sent.txt:2
+#, python-format
+msgid "Confirmation e-mail sent to %(email)s."
+msgstr "Email xác nhận đã được gửi đến %(email)s."
+
+#: allauth_ui/templates/account/messages/email_confirmed.txt:2
+#, python-format
+msgid "You have confirmed %(email)s."
+msgstr "Bạn đã xác nhận %(email)s."
+
+#: allauth_ui/templates/account/messages/email_deleted.txt:2
+#, python-format
+msgid "Removed e-mail address %(email)s."
+msgstr "Đã xóa địa chỉ email %(email)s."
+
+#: allauth_ui/templates/account/messages/logged_in.txt:4
+#, python-format
+msgid "Successfully signed in as %(name)s."
+msgstr "Đã đăng nhập thành công với tên %(name)s."
+
+#: allauth_ui/templates/account/messages/logged_out.txt:2
+msgid "You have signed out."
+msgstr "Bạn đã đăng xuất."
+
+#: allauth_ui/templates/account/messages/password_changed.txt:2
+msgid "Password successfully changed."
+msgstr "Đã thay đổi mật khẩu thành công."
+
+#: allauth_ui/templates/account/messages/password_set.txt:2
+msgid "Password successfully set."
+msgstr "Đã đặt mật khẩu thành công."
+
+#: allauth_ui/templates/account/messages/primary_email_set.txt:2
+msgid "Primary e-mail address set."
+msgstr "Đã đặt địa chỉ email chính."
+
+#: allauth_ui/templates/account/messages/unverified_primary_email.txt:2
+msgid "Your primary e-mail address must be verified."
+msgstr "Địa chỉ email chính của bạn phải được xác minh."
+
+#: allauth_ui/templates/account/password_change.html:6
+#: allauth_ui/templates/account/password_change.html:7
+#: allauth_ui/templates/account/password_change.html:12
+#: allauth_ui/templates/account/password_change.html:20
+#: allauth_ui/templates/account/password_reset_from_key.html:6
+#: allauth_ui/templates/account/password_reset_from_key.html:7
+#: allauth_ui/templates/account/password_reset_from_key.html:14
+#: allauth_ui/templates/account/password_reset_from_key_done.html:4
+#: allauth_ui/templates/account/password_reset_from_key_done.html:9
+#: allauth_ui/templates/account/snippets/header.html:24
+#: allauth_ui/templates/account/snippets/header.html:29
+#: allauth_ui/templates/account/snippets/user_tools.html:25
+#: allauth_ui/templates/base_site.html:40
+msgid "Change Password"
+msgstr "Thay đổi mật khẩu"
+
+#: allauth_ui/templates/account/password_change.html:23
+msgid "Forgot Password?"
+msgstr "Quên mật khẩu?"
+
+#: allauth_ui/templates/account/password_reset.html:7
+#: allauth_ui/templates/account/password_reset.html:8
+#: allauth_ui/templates/account/password_reset.html:13
+#: allauth_ui/templates/account/password_reset_done.html:6
+#: allauth_ui/templates/account/password_reset_done.html:11
+msgid "Password Reset"
+msgstr "Đặt lại mật khẩu"
+
+#: allauth_ui/templates/account/password_reset.html:20
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+"Quên mật khẩu? Nhập địa chỉ email của bạn dưới đây, và chúng tôi sẽ gửi cho "
+"bạn một email cho phép bạn đặt lại mật khẩu."
+
+#: allauth_ui/templates/account/password_reset.html:24
+msgid "Reset My Password"
+msgstr "Đặt lại mật khẩu của tôi"
+
+#: allauth_ui/templates/account/password_reset.html:27
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr ""
+"Vui lòng liên hệ với chúng tôi nếu bạn gặp bất kỳ khó khăn nào khi đặt lại "
+"mật khẩu."
+
+#: allauth_ui/templates/account/password_reset_done.html:19
+msgid ""
+"\n"
+"        We have sent you an e-mail. Please contact us if you do not receive "
+"it within a few minutes.\n"
+"      "
+msgstr ""
+"\n"
+"        Chúng tôi đã gửi cho bạn một email. Vui lòng liên hệ với chúng tôi "
+"nếu bạn không nhận được email trong vòng vài phút.\n"
+"      "
+
+#: allauth_ui/templates/account/password_reset_from_key.html:14
+msgid "Bad Token"
+msgstr "Token không hợp lệ"
+
+#: allauth_ui/templates/account/password_reset_from_key.html:22
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please\n"
+"        request a <a href=\"%(passwd_reset_url)s\">new password reset</a>."
+msgstr ""
+"Liên kết đặt lại mật khẩu không hợp lệ, có thể do nó đã được sử dụng. Vui "
+"lòng\n"
+"        yêu cầu <a href=\"%(passwd_reset_url)s\">đặt lại mật khẩu mới</a>."
+
+#: allauth_ui/templates/account/password_reset_from_key.html:29
+msgid "Change password"
+msgstr "Thay đổi mật khẩu"
+
+#: allauth_ui/templates/account/password_reset_from_key.html:32
+#: allauth_ui/templates/account/password_reset_from_key_done.html:13
+msgid "Your password is now changed."
+msgstr "Mật khẩu của bạn đã được thay đổi."
+
+#: allauth_ui/templates/account/password_set.html:6
+#: allauth_ui/templates/account/password_set.html:7
+#: allauth_ui/templates/account/password_set.html:12
+#: allauth_ui/templates/account/password_set.html:19
+msgid "Set Password"
+msgstr "Đặt mật khẩu"
+
+#: allauth_ui/templates/account/profile_form.html:16
+msgid "Breadcrumbs"
+msgstr "Đường dẫn"
+
+#: allauth_ui/templates/account/profile_form.html:18 allauth_ui/views.py:43
+msgid "Home"
+msgstr "Trang chủ"
+
+#: allauth_ui/templates/account/profile_form.html:19
+#: allauth_ui/templates/account/snippets/user_tools.html:19
+#: allauth_ui/templates/base_site.html:34 allauth_ui/views.py:66
+msgid "Profile"
+msgstr "Hồ sơ"
+
+#: allauth_ui/templates/account/profile_form.html:33
+msgid "Please correct the error below."
+msgid_plural ""
+"Please correct\n"
+"              the errors below."
+msgstr[0] "Vui lòng sửa lỗi dưới đây."
+msgstr[1] ""
+"Vui lòng sửa\n"
+"              các lỗi dưới đây."
+
+#: allauth_ui/templates/account/profile_form.html:44
+msgid "Save"
+msgstr "Lưu"
+
+#: allauth_ui/templates/account/profile_form.html:45
+msgid "Save and continue editing"
+msgstr "Lưu và tiếp tục chỉnh sửa"
+
+#: allauth_ui/templates/account/signup.html:6
+#: allauth_ui/templates/account/signup.html:7
+msgid "Signup"
+msgstr "Đăng ký"
+
+#: allauth_ui/templates/account/signup.html:13
+#: allauth_ui/templates/account/signup.html:26
+#: allauth_ui/templates/account/snippets/header.html:35
+#: allauth_ui/templates/account/snippets/user_tools.html:30
+#: allauth_ui/templates/base_site.html:45
+msgid "Sign Up"
+msgstr "Đăng ký"
+
+#: allauth_ui/templates/account/signup.html:18
+msgid "Already have an account? Then please "
+msgstr "Đã có tài khoản? Vui lòng "
+
+#: allauth_ui/templates/account/signup.html:18
+msgid "sign in"
+msgstr "đăng nhập"
+
+#: allauth_ui/templates/account/signup_closed.html:5
+#: allauth_ui/templates/account/signup_closed.html:10
+msgid "Sign Up Closed"
+msgstr "Đăng ký đã đóng"
+
+#: allauth_ui/templates/account/signup_closed.html:14
+msgid "We are sorry, but the sign up is currently closed."
+msgstr "Chúng tôi rất tiếc, nhưng việc đăng ký hiện đã đóng."
+
+#: allauth_ui/templates/account/snippets/already_logged_in.html:5
+msgid "Note"
+msgstr "Lưu ý"
+
+#: allauth_ui/templates/account/snippets/already_logged_in.html:5
+#, python-format
+msgid "you are already logged in as %(user_display)s."
+msgstr "bạn đã đăng nhập với tên %(user_display)s."
+
+#: allauth_ui/templates/account/snippets/header.html:11
+#: allauth_ui/templates/account/snippets/user_tools.html:8
+#: allauth_ui/templates/base_site.html:23
+msgid "Welcome,"
+msgstr "Chào mừng,"
+
+#: allauth_ui/templates/account/snippets/header.html:19
+#: allauth_ui/templates/account/snippets/user_tools.html:22
+#: allauth_ui/templates/base_site.html:37
+msgid "Setup 2fa"
+msgstr "Thiết lập 2FA"
+
+#: allauth_ui/templates/account/snippets/user_tools.html:15
+#: allauth_ui/templates/base_site.html:30
+msgid "View site"
+msgstr "Xem trang"
+
+#: allauth_ui/templates/account/verification_sent.html:5
+#: allauth_ui/templates/account/verification_sent.html:10
+#: allauth_ui/templates/account/verified_email_required.html:5
+#: allauth_ui/templates/account/verified_email_required.html:10
+msgid "Verify Your E-mail Address"
+msgstr "Xác minh địa chỉ email của bạn"
+
+#: allauth_ui/templates/account/verification_sent.html:14
+msgid ""
+"We have sent an e-mail to you for verification. Follow the link provided to "
+"finalize the signup\n"
+"      process. Please contact us if you do not receive it within a few "
+"minutes."
+msgstr ""
+"Chúng tôi đã gửi một email cho bạn để xác minh. Nhấp vào liên kết được cung "
+"cấp để hoàn tất quá trình đăng ký\n"
+"      . Vui lòng liên hệ với chúng tôi nếu bạn không nhận được email trong "
+"vòng vài phút."
+
+#: allauth_ui/templates/account/verified_email_required.html:15
+msgid ""
+"This part of the site requires us to verify that\n"
+"      you are who you claim to be. For this purpose, we require that you\n"
+"      verify ownership of your e-mail address. "
+msgstr ""
+"Phần này của trang web yêu cầu chúng tôi xác minh rằng\n"
+"      bạn là người mà bạn tuyên bố. Vì mục đích này, chúng tôi yêu cầu bạn\n"
+"      xác minh quyền sở hữu địa chỉ email của bạn. "
+
+#: allauth_ui/templates/account/verified_email_required.html:18
+msgid ""
+"We have sent an e-mail to you for\n"
+"      verification. Please click on the link inside this e-mail. Please\n"
+"      contact us if you do not receive it within a few minutes."
+msgstr ""
+"Chúng tôi đã gửi một email cho bạn để\n"
+"      xác minh. Vui lòng nhấp vào liên kết trong email này. Vui lòng\n"
+"      liên hệ với chúng tôi nếu bạn không nhận được email trong vòng vài "
+"phút."
+
+#: allauth_ui/templates/account/verified_email_required.html:21
+#, python-format
+msgid ""
+"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
+"mail address</a>\n"
+"      ."
+msgstr ""
+"<strong>Lưu ý:</strong> bạn vẫn có thể <a href=\"%(email_url)s\">thay đổi "
+"địa chỉ email của bạn</a>\n"
+"      ."
+
+#: allauth_ui/templates/base_site.html:5 allauth_ui/templates/base_site.html:8
+msgid "Account site"
+msgstr "Trang tài khoản"
+
+#: allauth_ui/views.py:72
+msgid "Identity"
+msgstr "Danh tính"
+
+#: allauth_ui/views.py:73
+msgid "Personal infomation"
+msgstr "Thông tin cá nhân"
+
+#: allauth_ui/views.py:77
+msgid "Important dates"
+msgstr "Ngày quan trọng"
+
+#: allauth_ui/views.py:102
+#, python-brace-format
+msgid "The {name} “{obj}” was changed successfully."
+msgstr "{name} “{obj}” đã được thay đổi thành công."
+
+#: allauth_ui/views.py:105
+#, python-brace-format
+msgid ""
+"The {name} “{obj}” was changed successfully. You may edit it again below."
+msgstr ""
+"{name} “{obj}” đã được thay đổi thành công. Bạn có thể chỉnh sửa lại nó dưới "
+"đây."
+
+#: allauth_ui/views.py:123
+msgid "You don't have permission to edit this profile."
+msgstr "Bạn không có quyền chỉnh sửa hồ sơ này."

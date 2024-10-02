@@ -1,0 +1,73 @@
+{% extends "admin/base.html" %}
+{% load i18n static %}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} |
+  {{ site_title|default:_('Account site') }}{% endblock %}
+
+{% block branding %}
+  <h1 id="site-name"><a href="{% url 'account_home' %}">{{ site_header|default:_('Account site') }}</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block extrastyle %}{{ block.super }}
+  <link rel="stylesheet" href="{% static 'admin/css/dashboard.css' %}">
+  <link rel="stylesheet" href="{% static 'admin/css/forms.css' %}">
+{% endblock %}
+
+{% block usertools %}
+  <div id="user-tools">
+
+    {% if user.is_authenticated %}
+      {% block welcome-msg %}
+        {% translate 'Welcome,' %}
+        <strong>{% firstof user.get_short_name user.get_username %}</strong>.
+      {% endblock %}
+    {% endif %}
+
+    {% block userlinks %}
+      {% if site_url %}
+        <a href="{{ site_url }}" target="_blank">{% translate 'View site' %}</a> /
+      {% endif %}
+
+      {% if user.is_authenticated %}
+        <a href="{% url 'account_profile' pk=user.pk %}">{% translate 'Profile' %}</a> /
+        {% url 'two-factor-setup' as 2fa %}
+        {% if 2fa %}
+          <a href="{{ 2fa }}">{% trans "Setup 2fa" %}</a> /
+        {% endif %}
+        {% if user.has_usable_password %}
+          <a href="{% url 'account_change_password' %}">{% trans "Change Password" %}</a> /
+        {% endif %}
+        <a href="{% url 'account_logout' %}">{% trans 'Sign Out' %}</a>
+      {% else %}
+        <a href="{% url 'account_login' %}">{% trans 'Sign In' %}</a> /
+        <a href="{% url 'account_signup' %}">{% trans 'Sign Up' %}</a>
+      {% endif %}
+      <button class="theme-toggle">
+        <div class="visually-hidden theme-label-when-auto">Toggle theme (current theme: auto)</div>
+        <div class="visually-hidden theme-label-when-light">Toggle theme (current theme: light)</div>
+        <div class="visually-hidden theme-label-when-dark">Toggle theme (current theme: dark)</div>
+        <svg class="theme-icon-when-auto" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+             viewBox="0 0 256 256">
+          <path fill="currentColor"
+                d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24ZM40 128a88.1 88.1 0 0 1 88-88v176a88.1 88.1 0 0 1-88-88Z"></path>
+        </svg>
+        <svg class="theme-icon-when-dark" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+             viewBox="0 0 256 256">
+          <path fill="currentColor"
+                d="M232.13 143.64a6 6 0 0 0-6-1.49a90.07 90.07 0 0 1-112.27-112.3a6 6 0 0 0-7.49-7.48a102.88 102.88 0 0 0-51.89 36.31a102 102 0 0 0 142.84 142.84a102.88 102.88 0 0 0 36.31-51.89a6 6 0 0 0-1.5-5.99Zm-42 48.29a90 90 0 0 1-126-126a90.9 90.9 0 0 1 35.52-28.27a102.06 102.06 0 0 0 118.69 118.69a90.9 90.9 0 0 1-28.24 35.58Z"></path>
+        </svg>
+        <svg class="theme-icon-when-light" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+             viewBox="0 0 16 16">
+          <path fill="currentColor"
+                d="M8 11a3 3 0 1 1 0-6a3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8a4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+        </svg>
+      </button>
+    {% endblock %}
+  </div>
+{% endblock %}
+
+{% block content %}{% endblock %}
+
+{% block sidebar %}{% endblock %}
